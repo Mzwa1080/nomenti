@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nomenti Gas Supplier — Authorized LPGas Dealer</title>
+  <meta name="description" content="Nomenti Gas Supplier in Khayelitsha. Drive-through & walk-ins, gas refills, cylinder exchange, delivery R20. Order on WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top strip -->
+  <div class="topstrip">
+    <div class="container topstrip__inner">
+      <span class="badge">AUTHORIZED LPGAS DEALER</span>
+      <p>Drive-Through • Walk-ins • Refills • Exchanges • Delivery</p>
+      <a class="link" href="#order">Order Now</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top">
+        <span class="brand__mark">NG</span>
+        <span class="brand__text">
+          <strong>Nomenti</strong><span>Gas Supplier</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#prices">Prices</a>
+        <a href="#exchange">Exchange</a>
+        <a href="#delivery">Delivery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header__cta">
+        <a class="btn btn--ghost" href="tel:0213608027">Call 021 360 8027</a>
+        <a class="btn btn--primary" href="#order">WhatsApp Order</a>
+        <button class="burger" id="burger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <div class="hero__kicker">
+          <span class="dot"></span>
+          Safe • Affordable • Community Trusted
+        </div>
+
+        <h1>
+          Khayelitsha’s <span class="grad">Drive-Through Gas</span> Experience.
+        </h1>
+
+        <p class="lead">
+          Welcome to Nomenti Gas Supplier — get gas the smart way:
+          <strong>Drive-through</strong>, <strong>Walk-ins</strong>, <strong>Refills</strong>,
+          <strong>Exchanges</strong>, and <strong>Delivery</strong>.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="#order">Order on WhatsApp</a>
+          <a class="btn btn--ghost btn--lg" href="#prices">View Prices</a>
+        </div>
+
+        <div class="hero__chips">
+          <div class="chip">Delivery Fee: <strong>R20</strong></div>
+          <div class="chip">Drive-Through & Walk-Ins</div>
+          <div class="chip">Authorized LPGas Dealer</div>
+        </div>
+      </div>
+
+      <!-- Order card -->
+      <aside class="panel" id="order">
+        <div class="panel__top">
+          <h3>Quick WhatsApp Order</h3>
+          <p>Fastest response on WhatsApp. We’ll confirm your order + next steps.</p>
+        </div>
+
+        <form class="form" onsubmit="return openOrderWA(event)">
+          <label>
+            Full Name
+            <input name="name" required placeholder="Your name" />
+          </label>
+
+          <label>
+            Delivery or Collection?
+            <select name="mode" required>
+              <option value="">Select…</option>
+              <option>Delivery</option>
+              <option>Drive-through</option>
+              <option>Walk-in</option>
+            </select>
+          </label>
+
+          <div class="row">
+            <label>
+              What do you need?
+              <select name="need" required>
+                <option value="">Select…</option>
+                <option>Cylinder Exchange</option>
+                <option>Gas Refill / Pump</option>
+                <option>New Cylinder Price</option>
+              </select>
+            </label>
+
+            <label>
+              Size
+              <select name="size" required>
+                <option value="">Select…</option>
+                <option>1.3kg</option>
+                <option>2kg</option>
+                <option>3kg</option>
+                <option>4.5kg</option>
+                <option>5kg</option>
+                <option>6kg</option>
+                <option>7kg</option>
+                <option>9kg</option>
+                <option>12kg</option>
+                <option>14kg</option>
+                <option>19kg</option>
+                <option>48kg</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Delivery Area (if delivery)
+            <input name="area" placeholder="e.g. Site B / Site C / Town2" />
+          </label>
+
+          <label>
+            Notes
+            <textarea name="notes" rows="3" placeholder="Any extra info? (address, urgent, exchange details, etc.)"></textarea>
+          </label>
+
+          <button class="btn btn--primary btn--full" type="submit">
+            Send on WhatsApp →
+          </button>
+
+          <p class="fine">
+            Delivery fee is <strong>R20 per delivery</strong> (even for multiple tanks).
+          </p>
+        </form>
+      </aside>
+    </div>
+
+    <div class="hero__bg">
+      <div class="orb orb--1"></div>
+      <div class="orb orb--2"></div>
+      <div class="grid"></div>
+    </div>
+  </section>
+
+  <!-- Prices -->
+  <section class="section" id="prices">
+    <div class="container">
+      <div class="section__head">
+        <h2>Special Prices (06 November 2025)</h2>
+        <p>Drive-Through & Walk-Ins + Refills / Pumps. Prices shown in ZAR.</p>
+      </div>
+
+      <div class="priceGrid">
+        <div class="priceCard">
+          <h3>Drive-Through & Walk-Ins</h3>
+          <div class="priceList">
+            <div class="priceRow"><span>5kg “Shesha”</span><strong>R143.00</strong></div>
+            <div class="priceRow"><span>9kg “Kilos”</span><strong>R256.00</strong></div>
+            <div class="priceRow"><span>12kg</span><strong>R352.00</strong></div>
+            <div class="priceRow"><span>14kg</span><strong>R399.00</strong></div>
+            <div class="priceRow"><span>19kg</span><strong>R541.00</strong></div>
+            <div class="priceRow"><span>48kg</span><strong>R1 336.00</strong></div>
+          </div>
+          <div class="mutedNote">Tip: Drive-through is quick and safe.</div>
+        </div>
+
+        <div class="priceCard">
+          <h3>Refills / Pumps</h3>
+          <div class="priceList">
+            <div class="priceRow"><span>1.3kg</span><strong>R45.00</strong></div>
+            <div class="priceRow"><span>2kg</span><strong>R60.00</strong></div>
+            <div class="priceRow"><span>3kg</span><strong>R100.00</strong></div>
+            <div class="priceRow"><span>4.5kg</span><strong>R143.00</strong></div>
+            <div class="priceRow"><span>5kg</span><strong>R162.00</strong></div>
+            <div class="priceRow"><span>6kg</span><strong>R193.00</strong></div>
+            <div class="priceRow"><span>7kg</span><strong>R280.00</strong></div>
+            <div class="priceRow"><span>9kg</span><strong>R292.00</strong></div>
+          </div>
+          <div class="mutedNote">Need help choosing? WhatsApp us and we’ll guide you.</div>
+        </div>
+      </div>
+
+      <div class="ctaStrip">
+        <div>
+          <strong>Ready to order?</strong>
+          <span>Fastest response on WhatsApp: 073 466 5748</span>
+        </div>
+        <a class="btn btn--primary" href="#order">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exchange -->
+  <section class="section section--alt" id="exchange">
+    <div class="container">
+      <div class="section__head">
+        <h2>Exchange Calculator</h2>
+        <p>
+          Exchange rule: choose the tank you want and we calculate the difference.
+          If you’re upgrading, you pay the difference. If you’re going smaller, the amount to add is R0.
+        </p>
+      </div>
+
+      <div class="exchange">
+        <div class="exchange__card">
+          <h3>How much to add?</h3>
+
+          <div class="row">
+            <label>
+              I have
+              <select id="haveSize">
+                <option value="5kg">5kg</option>
+                <option value="9kg">9kg</option>
+                <option value="12kg">12kg</option>
+                <option value="14kg">14kg</option>
+                <option value="19kg">19kg</option>
+                <option value="48kg">48kg</option>
+              </select>
+            </label>
+
+            <label>
+              I want
+              <select id="wantSize">
+                <option value="9kg">9kg</option>
+                <option value="5kg">5kg</option>
+                <option value="12kg">12kg</option>
+                <option value="14kg">14kg</option>
+                <option value="19kg">19kg</option>
+                <option value="48kg">48kg</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="exchange__result">
+            <div>
+              <span class="muted">Amount to add</span>
+              <strong id="exchangeAmount">R0.00</strong>
+            </div>
+            <button class="btn btn--primary" type="button" onclick="sendExchangeWA()">
+              Send this on WhatsApp →
+            </button>
+          </div>
+
+          <p class="fine">
+            Note: This is based on the Drive-Through & Walk-Ins price list.
+          </p>
+        </div>
+
+        <div class="exchange__card exchange__card--soft">
+          <h3>Customer question example</h3>
+          <p class="quote">
+            “Ndino 5kg ndifuna ukwenza exchange for 9kg — ndingongeza malini?”
+          </p>
+          <p class="muted">
+            Use the calculator and tap WhatsApp to send the request instantly.
+          </p>
+
+          <div class="deliveryFee">
+            <div>
+              <strong>Delivery Fee</strong>
+              <p>R20 per delivery (even for multiple tanks).</p>
+            </div>
+            <span class="badge badge--dark">R20</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Delivery -->
+  <section class="section" id="delivery">
+    <div class="container">
+      <div class="section__head">
+        <h2>Delivery</h2>
+        <p>Delivery fee is <strong>R20 per delivery</strong>. Choose your area below.</p>
+      </div>
+
+      <div class="areaBox">
+        <div class="areaBox__head">
+          <strong>Delivery Areas</strong>
+          <span class="muted">Tap to copy (for quick WhatsApp ordering)</span>
+        </div>
+
+        <div class="chips" id="areaChips">
+          <button type="button" class="chipBtn" data-area="Site B">Site B</button>
+          <button type="button" class="chipBtn" data-area="Site C">Site C</button>
+          <button type="button" class="chipBtn" data-area="Makhaya">Makhaya</button>
+          <button type="button" class="chipBtn" data-area="Makhaza">Makhaza</button>
+          <button type="button" class="chipBtn" data-area="Town2">Town2</button>
+          <button type="button" class="chipBtn" data-area="Khayelitsha">Khayelitsha</button>
+          <button type="button" class="chipBtn" data-area="Enkanini">Enkanini</button>
+          <button type="button" class="chipBtn" data-area="Other">Other</button>
+        </div>
+
+        <div class="areaBox__cta">
+          <a class="btn btn--primary" href="#order">Order with Delivery</a>
+          <a class="btn btn--ghost" href="tel:0213608027">Call 021 360 8027</a>
+        </div>
+
+        <p class="fine" id="copyToast" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section section--alt" id="reviews">
+    <div class="container">
+      <div class="section__head">
+        <h2>What customers say</h2>
+        <p>We push the good (safety + drive-through) and we fix what hurts (communication + delivery reliability).</p>
+      </div>
+
+      <div class="quotes">
+        <figure class="quoteCard quoteCard--highlight">
+          <blockquote>“Whoever came with this drive-through idea is a genius. This place is very safe.”</blockquote>
+          <figcaption>— Local Guide</figcaption>
+        </figure>
+
+        <figure class="quoteCard">
+          <blockquote>“Gas is more affordable than other places around Khayelitsha.”</blockquote>
+          <figcaption>— Local Guide</figcaption>
+        </figure>
+
+        <figure class="quoteCard">
+          <blockquote>“I’ve been waiting for delivery the whole day… bad service.”</blockquote>
+          <figcaption>— Customer feedback</figcaption>
+        </figure>
+
+        <figure class="quoteCard">
+          <blockquote>“Please change people on phones… attitude.”</blockquote>
+          <figcaption>— Customer feedback</figcaption>
+        </figure>
+      </div>
+
+      <div class="trustBar">
+        <strong>We Heard You.</strong>
+        <span>Clear confirmations • Better updates • R20 delivery fee • Faster WhatsApp responses</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container split">
+      <div class="split__left">
+        <h2>Contact Nomenti Gas</h2>
+        <p class="muted">Call or WhatsApp your order. We’ll confirm your request and guide you.</p>
+
+        <div class="contactGrid">
+          <div class="contactCard">
+            <strong>Call Us</strong>
+            <p>021 360 8027</p>
+            <a class="btn btn--ghost btn--full" href="tel:0213608027">Call Now</a>
+          </div>
+
+          <div class="contactCard">
+            <strong>WhatsApp Orders</strong>
+            <p>073 466 5748</p>
+            <a class="btn btn--primary btn--full" href="#order">Open WhatsApp Order</a>
+          </div>
+
+          <div class="contactCard">
+            <strong>Alternate WhatsApp</strong>
+            <p>079 075 8163</p>
+            <a class="btn btn--ghost btn--full" href="#order">Use Order Form</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="split__right">
+        <div class="footerPanel">
+          <h3>Service Notes</h3>
+          <ul>
+            <li><strong>Delivery fee:</strong> R20 per delivery</li>
+            <li><strong>Exchange:</strong> pay the difference when upgrading</li>
+            <li><strong>Drive-through:</strong> safe and fast</li>
+            <li><strong>Prices:</strong> shown for 06 November 2025</li>
+          </ul>
+
+          <div class="footerPanel__chips">
+            <span class="badge badge--dark">Affordable</span>
+            <span class="badge badge--dark">Drive-Through</span>
+            <span class="badge badge--dark">Delivery</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating CTA -->
+  <a class="floatCta" href="#order" aria-label="Order on WhatsApp">
+    WhatsApp Order <span>→</span>
+  </a>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Nomenti Gas Supplier.</p>
+      <div class="footer__links">
+        <a href="#prices">Prices</a>
+        <a href="#exchange">Exchange</a>
+        <a href="#delivery">Delivery</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('nav');
+    burger?.addEventListener('click', () => {
+      nav.classList.toggle('nav--open');
+      burger.classList.toggle('burger--open');
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Pricing map (Drive-through & Walk-ins)
+    const price = {
+      "5kg": 143.00,
+      "9kg": 256.00,
+      "12kg": 352.00,
+      "14kg": 399.00,
+      "19kg": 541.00,
+      "48kg": 1336.00
+    };
+
+    function fmtZar(n){
+      return "R" + n.toLocaleString("en-ZA", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    // Exchange calc
+    const haveSize = document.getElementById('haveSize');
+    const wantSize = document.getElementById('wantSize');
+    const exchangeAmount = document.getElementById('exchangeAmount');
+
+    function updateExchange(){
+      const have = haveSize.value;
+      const want = wantSize.value;
+
+      const haveP = price[have] ?? 0;
+      const wantP = price[want] ?? 0;
+
+      const add = Math.max(0, wantP - haveP);
+      exchangeAmount.textContent = fmtZar(add);
+      return { have, want, add };
+    }
+
+    haveSize?.addEventListener('change', updateExchange);
+    wantSize?.addEventListener('change', updateExchange);
+    updateExchange();
+
+    // WhatsApp helpers
+    const WHATSAPP_MAIN = "27734665748"; // from your link
+
+    function openWhatsApp(text){
+      const url = "https://wa.me/" + WHATSAPP_MAIN + "?text=" + encodeURIComponent(text);
+      window.open(url, "_blank");
+    }
+
+    // Order form WA
+    function openOrderWA(e){
+      e.preventDefault();
+      const f = e.target;
+      const data = new FormData(f);
+
+      const name = data.get("name") || "";
+      const mode = data.get("mode") || "";
+      const need = data.get("need") || "";
+      const size = data.get("size") || "";
+      const area = data.get("area") || "";
+      const notes = data.get("notes") || "";
+
+      const msg =
+`Hi Nomenti Gas 👋
+
+Name: ${name}
+Mode: ${mode}
+Request: ${need}
+Size: ${size}
+Area: ${area}
+
+Notes: ${notes}
+
+Please confirm my order and next steps. (Delivery fee: R20)`;
+
+      openWhatsApp(msg);
+      return false;
+    }
+
+    // Exchange WA
+    function sendExchangeWA(){
+      const { have, want, add } = updateExchange();
+      const msg =
+`Hi Nomenti Gas 👋
+
+I want to exchange:
+Have: ${have}
+Want: ${want}
+
+Amount to add (upgrade difference): ${fmtZar(add)}
+Delivery fee (if delivery): R20
+
+Please confirm availability and next steps.`;
+      openWhatsApp(msg);
+    }
+
+    // Delivery area chips copy + auto-fill idea
+    const toast = document.getElementById("copyToast");
+    document.querySelectorAll(".chipBtn").forEach(btn => {
+      btn.addEventListener("click", async () => {
+        const area = btn.dataset.area || "";
+        try{
+          await navigator.clipboard.writeText(area);
+          toast.textContent = `Copied: ${area}`;
+          setTimeout(() => toast.textContent = "", 1800);
+        }catch{
+          toast.textContent = `Selected: ${area}`;
+          setTimeout(() => toast.textContent = "", 1800);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
